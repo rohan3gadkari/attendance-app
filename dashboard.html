@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Attendance Dashboard</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Present</th>
+      <th>Absent</th>
+    </tr>
+    <tr>
+      <td>Ravi</td>
+      <td><input type="radio" name="ravi" value="Present"></td>
+      <td><input type="radio" name="ravi" value="Absent"></td>
+    </tr>
+    <tr>
+      <td>Sita</td>
+      <td><input type="radio" name="sita" value="Present"></td>
+      <td><input type="radio" name="sita" value="Absent"></td>
+    </tr>
+  </table>
+  <button onclick="submitAttendance()">Submit</button>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
